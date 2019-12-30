@@ -20,3 +20,5 @@ puts 1 + 5
 puts 1.0 + 7 #one int and one float produce float
 puts 10 / 4 #two ints produce int
 puts 19/3.8 #one int and float produce float
+
+puts num.to_s;
