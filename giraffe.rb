@@ -1,24 +1,18 @@
-puts 6 + 9
-puts 2**9
-puts 3-2
-puts 5/9
-puts 10 % 8
-puts 10 * 3
+#Getting Input
+# puts "Enter your name: "
+# name = gets.chomp()
+# puts "Enter your age"
+# age =gets.chomp()
+# puts "Hello #{name}, you are #{age}"
 
-num = 229.2223
-puts num
-
-puts ("my fav num " + num.to_s)
-puts num.abs()  #absolute value
-
-puts num.round()
-num = 20.1
-puts num.ceil() #rounds up to closest whole number
-puts num.floor()  #rounds down to immediate whole number
-puts Math.log(1)
-puts 1 + 5
-puts 1.0 + 7 #one int and one float produce float
-puts 10 / 4 #two ints produce int
-puts 19/3.8 #one int and float produce float
-
-puts num.to_s;
+#Building a Calculator
+puts "Enter a number: "
+# num1 = gets.chomp() #gets takes whatever the user puts in, chomp gets rid of the new line
+num1 = gets.chomp().to_f #same as previous but converts input into float
+puts "Enter another number: "
+# num2 = gets.chomp()
+num2 = gets.chomp().to_f #same as previous but converts input into float
+puts (num1 + num2)    
+#ruby by default takes user input and stores as string,
+# therefore conversion to integer is necessary
+# if you wish to perform mathematical operations
